@@ -149,7 +149,7 @@
         <div class="row">
           <div class="book">
             <div class="book__form">
-              <form class="form" action="#">
+                <form class="form" action="#"  id="form">
                 <div class="u-margin-bottom-medium">
                   <h2 class="heading-secondary u-dark-text u-capitalize-text">
                     Let's Talk
@@ -160,7 +160,8 @@
                     class="form__input"
                     type="text"
                     placeholder="Full Name"
-                    id="name"
+                    name="from_name"
+                    id="from_name"
                     required
                   />
                   <label class="form__label" for="name">Full Name</label>
@@ -170,14 +171,17 @@
                     class="form__input"
                     type="email"
                     placeholder="Email"
-                    id="Email"
+                    name="to_name"
+                    id="to_name"
                     required
                   />
                   <label class="form__label" for="name">Email</label>
                 </div>
 
                 <div class="form__group">
-                  <button class="btn btn--green">Submit &rarr;</button>
+                  <button class="btn btn--green" id="button">
+                    Submit &rarr;
+                  </button>
                 </div>
               </form>
             </div>
@@ -185,5 +189,14 @@
         </div>
       </section>
     </main>
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/emailjs-com@2/dist/email.min.js"
+    ></script>
+
+    <script type="text/javascript">
+      emailjs.init("user_02t2nvpbgk95skdYAkmV3");
+    </script>
+    <script src="./public/img/scripts.js"></script>
   </body>
 </html>
