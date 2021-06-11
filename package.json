@@ -1,9 +1,11 @@
 {
-  "name": "Natours",
-  "version": "1.0.0",
+  "name": "Wannafarm",
+  "version": "2.0.0",
   "description": "",
   "main": "index.js",
-  "scripts": {},
+  "scripts": {
+    "start": "node-sass ./sass/main.scss ./css/style.css -w"
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/houdini-21/natours.git"
@@ -11,19 +13,8 @@
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/houdini-21/natours/issues"
-  },
-  "homepage": "https://github.com/houdini-21/natours#readme",
+  "bugs": {},
   "devDependencies": {
-    "@commitlint/cli": "^11.0.0",
-    "@commitlint/config-conventional": "^11.0.0",
-    "husky": "^5.0.0-beta.0",
     "node-sass": "^5.0.0"
-  },
-  "husky": {
-    "hooks": {
-      "commit-msg": "commitlint -E HUSKY_GIT_PARAMS"
-    }
   }
 }

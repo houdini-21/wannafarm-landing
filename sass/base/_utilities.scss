@@ -32,3 +32,30 @@
 .u-capitalize-text {
   text-transform: capitalize !important;
 }
+
+.u-green-principal {
+  &-font {
+    color: $green-light-1;
+  }
+  &-btn {
+    background-color: $green-light-1;
+  }
+}
+
+.u-black-1 {
+  &-font {
+    color: $black-1;
+  }
+  &-btn {
+    background-color: $black-1;
+  }
+}
+
+.u-white-1 {
+  &-font {
+    color: $white-1;
+  }
+  &-btn {
+    background-color: $white-1;
+  }
+}
