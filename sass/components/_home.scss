@@ -14,5 +14,11 @@
     width: 56rem;
     position: relative;
     left: 4%;
+
+    @include respond(tab-land) {
+      width: 53rem;
+      position: relative;
+      left: 3%;
+    }
   }
 }
