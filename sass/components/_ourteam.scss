@@ -21,6 +21,17 @@
         border-radius: 15px;
         height: 65rem;
       }
+
+      @include respond(tab-port) {
+        width: 90%;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        flex-direction: column;
+        border-radius: 15px;
+        height: 85rem;
+        padding: 2rem;
+      }
     }
   }
 
@@ -42,6 +53,11 @@
       @include respond(tab-land) {
         width: 90%;
       }
+
+      @include respond(tab-port) {
+        justify-content: center;
+        flex-wrap: wrap;
+      }
     }
     &-div {
       height: 40rem;
@@ -50,6 +66,12 @@
       @include respond(tab-land) {
         height: 38rem;
         width: 25.5rem;
+      }
+
+      @include respond(tab-port) {
+        height: 30rem;
+        width: 20.5rem;
+        margin: 1.5rem;
       }
     }
   }
@@ -63,6 +85,17 @@
       align-items: center;
       justify-content: space-between;
       flex-direction: column;
+
+      @include respond(tab-port) {
+        height: 20rem;
+        width: 100%;
+        margin: 0 auto;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex-direction: column;
+        padding: 1rem;
+      }
     }
   }
 }
@@ -77,6 +110,11 @@
   @include respond(tab-land) {
     height: 38rem;
     width: 25.5rem;
+  }
+
+  @include respond(tab-port) {
+    height: 30rem;
+    width: 20.5rem;
   }
 
   &__side {
@@ -94,6 +132,11 @@
     @include respond(tab-land) {
       height: 38rem;
       width: 25.5rem;
+    }
+
+    @include respond(tab-port) {
+      height: 30rem;
+      width: 20.5rem;
     }
 
     &--front {

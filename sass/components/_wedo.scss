@@ -27,6 +27,11 @@
       width: 45rem;
       height: auto;
     }
+
+    @include respond(tab-port) {
+      width: 35rem;
+      height: auto;
+    }
   }
 
   &__lines-img {
@@ -45,6 +50,13 @@
         bottom: 20%;
         width: 56%;
       }
+
+      @include respond(tab-port) {
+        position: absolute;
+        height: 30rem;
+        bottom: 20%;
+        width: 60%;
+      }
     }
 
     @include respond(tab-land) {
@@ -52,6 +64,13 @@
       top: 29%;
       height: 32rem;
       width: 60%;
+    }
+
+    @include respond(tab-port) {
+      position: absolute;
+      top: 28%;
+      height: 30rem;
+      width: 55%;
     }
   }
 }

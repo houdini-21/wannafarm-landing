@@ -37,12 +37,22 @@ body {
   }
   &-60 {
     font-size: 6rem;
+
+    @include respond(tab-port) {
+      font-size: 4rem;
+      line-height: 50px !important;
+    }
   }
   &-45 {
     font-size: 4.5rem;
   }
+
   &-40 {
     font-size: 4rem;
+
+    @include respond(tab-port) {
+      font-size: 2.6rem;
+    }
   }
 
   &-35 {
@@ -75,13 +85,23 @@ body {
 
   &-25 {
     font-size: 2.5rem;
+    @include respond(tab-port) {
+      font-size: 2rem;
+    }
   }
 
   &-20 {
     font-size: 2rem;
+    @include respond(tab-port) {
+      font-size: 1.5rem;
+    }
   }
   &-18 {
     font-size: 1.8rem;
+
+    @include respond(tab-port) {
+      font-size: 1.4rem;
+    }
   }
 
   &-16 {
@@ -89,6 +109,10 @@ body {
   }
   &-15 {
     font-size: 1.5rem;
+
+    @include respond(tab-port) {
+      font-size: 1.2rem;
+    }
   }
 }
 
@@ -99,6 +123,9 @@ body {
 
   &-35 {
     font-size: 3.5rem;
+    @include respond(tab-port) {
+      font-size: 3rem;
+    }
   }
   &-30 {
     font-size: 3rem;
