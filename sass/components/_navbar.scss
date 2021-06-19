@@ -10,11 +10,78 @@
     margin: 0 auto;
   }
 
+  &__open {
+    position: absolute;
+    right: 0;
+  }
+
   &__items-box {
     display: flex;
     align-items: center;
     flex-direction: row;
     justify-content: space-between;
     width: 44rem;
+    visibility: visible;
+
+    @include respond(tab-port) {
+      visibility: hidden;
+      width: 0;
+      display: none;
+    }
+  }
+
+  &-small {
+    width: 0%;
+    background-color: $green-light-1;
+    top: 0;
+    right: 0;
+    visibility: hidden;
+    position: fixed;
+    z-index: 2000;
+    transition: all 0.4s;
+
+    @include respond(tab-port) {
+      visibility: visible;
+      height: 100vh;
+      width: 0%;
+    }
+
+    &.open {
+      width: 40%;
+
+      @include respond(phone) {
+        width: 60%;
+      }
+    }
+
+    &__close {
+      position: absolute;
+      left: 20px;
+      top: 0px;
+      cursor: pointer;
+    }
+
+    &__box {
+      display: flex;
+      align-items: center;
+      justify-content: space-evenly;
+      flex-direction: column;
+      height: 25rem;
+      visibility: visible;
+      opacity: 1;
+      margin-top: 2rem;
+      transition: all 0.2s;
+
+      &.hidden {
+        visibility: hidden;
+        opacity: 0;
+      }
+    }
+
+    &__items-box {
+      visibility: visible;
+      transition: all 0.3s;
+      opacity: 1;
+    }
   }
 }

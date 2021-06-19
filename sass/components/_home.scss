@@ -8,6 +8,31 @@
     top: -6rem;
     display: flex;
     align-items: center;
+
+    @include respond(tab-port) {
+      background-image: url(../../public/img/background-home-mid.svg);
+      background-position: right;
+    }
+    @include respond(phone) {
+      background-image: url();
+      flex-direction: column;
+    }
+
+    &-small {
+      display: none;
+      @include respond(phone) {
+        margin-top: 4rem;
+        display: flex;
+        align-items: center;
+      }
+
+      &-img {
+        @include respond(phone) {
+          width: 80%;
+          margin: 0 auto;
+        }
+      }
+    }
   }
 
   &__text-description {

@@ -13,6 +13,11 @@
       <div class="navbar__logo-box">
         <h2 class="u-font-regular-30 u-green-principal-font">Wannafarm</h2>
       </div>
+
+      <div class="navbar__open" id="openMen">
+        <p class="u-font-40 u-green-principal-font">&#9776;</p>
+      </div>
+
       <div class="navbar__items-box">
         <div class="navbar__items-item">
           <p class="u-font-light-18 u-green-principal-font">What we do</p>
@@ -24,11 +29,33 @@
           <a class="btn btn-small green u-font-light-18">Contact us</a>
         </div>
       </div>
+      <div class="navbar-small" id="menuSide">
+        <div class="navbar-small__close" id="closeBtn">
+          <p class="u-font-light-45 u-white-1-font">&times;</p>
+        </div>
+        <div class="navbar-small__box hidden" id="menuSideItems">
+          <div class="navbar-small__items-box">
+            <p class="u-font-light-25 u-white-1-font">What we do</p>
+          </div>
+          <div class="navbar-small__items-box">
+            <p class="u-font-light-25 u-white-1-font">About us</p>
+          </div>
+          <div class="navbar-small__items-box">
+            <p class="u-font-light-25 u-white-1-font">Contact us</p>
+          </div>
+        </div>
+      </div>
     </nav>
+
     <div class="home__banner">
-      <div
-        class="home__text-description"
-      >
+      <div class="home__banner-small">
+        <img
+          class="home__banner-small-img"
+          src="./public/img/background-home-small.svg"
+          alt=""
+        />
+      </div>
+      <div class="home__text-description">
         <h2
           class="u-font-regular-60 u-black-1-font"
           style="line-height: 74px; margin-bottom: 1rem"
@@ -51,16 +78,14 @@
       </div>
     </div>
     <div class="wedo__container">
-      <div class="wedo__text-box" style="width: 40%; text-align: center">
+      <div class="wedo__text-box" style="text-align: center">
         <h2 class="u-font-regular-40 u-black-1-font">What we do?</h2>
         <p class="u-font-light-18 u-black-1-font" style="line-height: 22px">
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut
           scelerisque nisl lacus, arcu.
         </p>
       </div>
-      <div
-        class="wedo__box-features"
-      >
+      <div class="wedo__box-features">
         <div class="wedo__text-container" style="width: 40rem">
           <h2 class="u-font-regular-40 u-black-1-font">Monitor your farm</h2>
           <p class="u-font-light-18 u-black-1-font" style="line-height: 20px">
@@ -77,14 +102,8 @@
         </div>
       </div>
 
-      <img
-        class="wedo__lines-img"
-        src="./public/img/lineas.png"
-        alt=""
-      />
-      <div
-        class="wedo__box-features"
-      >
+      <img class="wedo__lines-img" src="./public/img/lineas.png" alt="" />
+      <div class="wedo__box-features ce">
         <div class="wedo__image-container">
           <img
             class="wedo__feature-img"
@@ -107,9 +126,7 @@
         src="./public/img/lineas-reverse.png"
         alt=""
       />
-      <div
-        class="wedo__box-features"
-      >
+      <div class="wedo__box-features">
         <div class="wedo__text-container" style="width: 40rem">
           <h2 class="u-font-regular-40 u-black-1-font">Rent your farm</h2>
           <p class="u-font-light-18 u-black-1-font" style="line-height: 20px">
@@ -269,20 +286,27 @@
         </div>
       </div>
 
-      <p
-        class="footer__special u-font-light-16 u-white-1-font"
-        style="left: 1rem"
-      >
+      <p class="footer__special-left u-font-light-16 u-white-1-font">
         Wannafarm 2021 &copy;
       </p>
-      <p
-        class="footer__special u-font-light-16 u-white-1-font"
-        style="right: 1rem"
-      >
+      <p class="footer__special-right u-font-light-16 u-white-1-font">
         Site developed and designed by houdini-21
       </p>
     </footer>
     <script>
+      const closeMenu = () => {
+        document.getElementById('menuSide').classList.remove('open');
+        document.getElementById('menuSideItems').classList.add('hidden');
+      };
+
+      const openMenu = () => {
+        document.getElementById('menuSide').classList.add('open');
+        document.getElementById('menuSideItems').classList.remove('hidden');
+      };
+
+      document.getElementById('closeBtn').addEventListener('click', closeMenu);
+
+      document.getElementById('openMen').addEventListener('click', openMenu);
     </script>
   </body>
 </html>

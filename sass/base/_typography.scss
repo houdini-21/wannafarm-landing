@@ -31,6 +31,12 @@ body {
   font-family: 'suprema-thin';
 }
 
+.u-font {
+  &-40 {
+    font-size: 4rem;
+  }
+}
+
 .u-font-regular {
   &-70 {
     font-size: 7rem;

@@ -7,6 +7,10 @@
     justify-content: center;
     padding: 2rem 1rem;
     margin: 2rem 0;
+
+    @include respond(phone) {
+      height: 42rem;
+    }
   }
 
   &__box-div {
@@ -19,6 +23,10 @@
     align-items: center;
     justify-content: center;
     flex-direction: column;
+
+    @include respond(phone) {
+      height: 35rem;
+    }
   }
   &__title-box {
     width: 100%;
@@ -28,5 +36,10 @@
     align-items: center;
     justify-content: center;
     flex-direction: column;
+
+    @include respond(phone) {
+      height: 22rem;
+      padding: 2rem 1rem;
+    }
   }
 }
