@@ -1,6 +1,6 @@
 {
-  "name": "Wannafarm",
-  "version": "2.0.0",
+  "name": "wannafarm-landing",
+  "version": "1.0.0",
   "description": "",
   "main": "index.js",
   "scripts": {
@@ -8,13 +8,15 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/houdini-21/natours.git"
+    "url": "git+https://github.com/houdini-21/wannafarm-landing.git"
   },
-  "keywords": [],
   "author": "",
   "license": "ISC",
-  "bugs": {},
-  "devDependencies": {
-    "node-sass": "^5.0.0"
+  "bugs": {
+    "url": "https://github.com/houdini-21/wannafarm-landing/issues"
+  },
+  "homepage": "https://github.com/houdini-21/wannafarm-landing#readme",
+  "dependencies": {
+    "node-sass": "^6.0.1"
   }
 }

@@ -571,6 +571,18 @@ body {
 .navbar__open {
   position: absolute;
   right: 0; }
+  @media (max-width: 75em) {
+    .navbar__open {
+      display: none; } }
+  @media (max-width: 112.5em) {
+    .navbar__open {
+      display: none; } }
+  @media (max-width: 37.5em) {
+    .navbar__open {
+      display: block; } }
+  @media (max-width: 56.25em) {
+    .navbar__open {
+      display: block; } }
 
 .navbar__items-box {
   display: flex;
