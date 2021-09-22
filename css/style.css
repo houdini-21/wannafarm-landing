@@ -685,6 +685,19 @@ body {
     .our-team__text-box {
       width: 60%; } }
 
+.our-team__cards-circle-box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column; }
+
+.our-team__cards-circle-img {
+  height: 200px;
+  width: 200px;
+  object-fit: cover;
+  border-radius: 100px;
+  background-color: grey; }
+
 .our-team__cards-container {
   display: flex;
   align-items: center;

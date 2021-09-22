@@ -55,6 +55,22 @@
   }
 
   &__cards {
+    &-circle {
+      &-box {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+      }
+      &-img {
+        height: 200px;
+        width: 200px;
+        object-fit: cover;
+        border-radius: 100px;
+        background-color: grey;
+      }
+    }
+
     &-container {
       display: flex;
       align-items: center;
