@@ -254,6 +254,9 @@ body {
     width: 50%;
     padding: 6rem; }
 
+html {
+  scroll-behavior: smooth; }
+
 .footer {
   height: 30rem;
   width: 100%;
